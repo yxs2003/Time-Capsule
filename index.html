@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时光邮局</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 首页 -->
+    <div class="homepage">
+        <div class="message-container">
+            <p class="message">你相对未来说什么吗？</p>
+        </div>
+        <div class="capsule" onclick="openFormPage()">
+            <div class="capsule-content"></div>
+        </div>
+    </div>
+
+    <!-- 表单页面 -->
+    <div class="form-page hidden" id="formPage">
+        <div class="capsule-open">
+            <p class="form-title">给未来的信</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="subject">标题</label>
+                    <input type="text" id="subject" name="subject" placeholder="标题" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">发信时间</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipient">收件人</label>
+                    <input type="text" id="recipient" name="recipient" placeholder="请输入收件人" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" name="message" placeholder="请输入你的留言..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">发送</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
