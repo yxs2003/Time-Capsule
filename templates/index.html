@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时光邮局 - 给未来的自己</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="capsule-container">
+        <!-- 胶囊部分 -->
+        <div class="capsule" id="timeCapsule">
+            <div class="capsule-half capsule-left"></div>
+            <div class="capsule-half capsule-right"></div>
+            <div class="pixel-border"></div>
+            <div class="capsule-text">你想对未来说什么吗？</div>
+        </div>
+        <div class="click-hint">点击胶囊</div>
+
+        <!-- 表单部分 -->
+        <div class="form-container" id="mailForm">
+            <div class="form-header">
+                <h2>时光邮局</h2>
+                <p>写一封信给未来的人</p>
+            </div>
+            <form action="{{ url_for('send_mail') }}" method="post">
+                <div class="form-group">
+                    <label class="form-label" for="title">标题</label>
+                    <input type="text" id="title" name="title" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="content">内容</label>
+                    <textarea id="content" name="content" class="form-input form-textarea" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="recipient">收件人邮箱</label>
+                    <input type="email" id="recipient" name="recipient" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">查看密码</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="delivery_date">发信时间</label>
+                    <input type="date" id="delivery_date" name="delivery_date" class="form-input" required>
+                </div>
+                <button type="submit" class="form-button">发送到未来</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

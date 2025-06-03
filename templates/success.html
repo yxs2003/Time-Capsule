@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时光邮局 - 发送成功</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        .success-container {
+            text-align: center;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            border: 4px solid #000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .success-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        
+        .success-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .success-message {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .home-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff4d4d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: 3px solid #000;
+            transition: background-color 0.3s;
+        }
+        
+        .home-button:hover {
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <div class="capsule-container">
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h1 class="success-title">发送成功！</h1>
+            <p class="success-message">
+                您的信件已经成功保存在时光邮局中，<br>
+                将在您指定的日期发送到收件人邮箱。<br>
+                感谢您使用时光邮局，期待与您再次相遇。
+            </p>
+            <a href="{{ url_for('index') }}" class="home-button">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>
