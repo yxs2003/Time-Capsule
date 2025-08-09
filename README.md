@@ -10,9 +10,8 @@
 
 年少时的我究竟对未来说了什么，我至今都想不起来。这个项目就当作纪念一下每个人都会逝去的年少时光吧！
 
-![首页](https://img.picui.cn/free/2025/06/03/683f0e2a9b48e.jpg)
-
-![发件页](https://img.picui.cn/free/2025/06/03/683f0e2addfb2.jpg)
+![首页](https://s2.loli.net/2025/08/09/eqMg5kAna3rd4EW.jpg)
+![发件页](https://s2.loli.net/2025/08/09/vOCre4i9FNtpHWY.jpg)
 
 
 # 时光邮局网站部署详细教程
